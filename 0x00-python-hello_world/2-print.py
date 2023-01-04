@@ -1,2 +1,6 @@
 #!/usr/bin/python3
-print("\"Programming is like building a multilingual puzzle")
+for i in range(97, 123):
+if i == 101 or i == 113:
+continue
+else:
+print("{}".format(chr(i)), end="")
