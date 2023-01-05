@@ -1,5 +1,15 @@
 #!/usr/bin/python3
-str = "Python is an interpreted, interactive, object-oriented programming\
-language that combines remarkable power with very clear syntax"
-str = (str[39:66] + str[106:112] + str[:6])
-print(str)
+
+def uppercase(str):
+
+    for i in range(len(str)):
+
+        uni_code = ord(str[i])
+
+        if uni_code >= 97 and uni_code <= 122:
+
+            uni_code = uni_code – 32
+
+            print("{}".format(chr(uni_code)), end='')
+
+            print()
